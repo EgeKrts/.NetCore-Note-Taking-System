@@ -1,0 +1,36 @@
+﻿@using EntityLayer.Concrete
+@model List<Note>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Not Başlığı</th>
+            <th>Tarih</th>
+            <th>Not</th>
+            <th>Sil</th>
+            <th>Güncelle</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var note in Model)
+        {
+            <tr>
+                <td>@note.Title</td> <!-- Not başlığı -->
+                <td>@note.DateCreated</td> <!-- Tarih -->
+                <td>@note.Content</td> <!-- Not içeriği -->
+                <td><a href="/Main/DeleteNote/@note.NoteId" class="btn mb-1 btn-rounded btn-outline-danger">Sil</a></td>
+                <td><a href="/Main/UpdateNote/@note.NoteId" class="btn mb-1 btn-rounded btn-outline-success">Güncelle</a></td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<td><a href="/Main/AddNote" class="btn mb-1 btn-rounded btn-info">Yeni Not Ekle</a></td>

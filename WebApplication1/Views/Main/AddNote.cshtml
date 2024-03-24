@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewData["Title"] = "AddNote";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+
+<form class="form-control" method="post">
+    <br /><br />
+    @Html.Label("Not Başlığı")
+    <input type="text" name="Title" class="form-control"/>
+    <br />
+    <label>İçerik</label>
+    <br />
+    <input type="text" name="Content" class="form-control"/>
+    <br />
+    <label>Tarih</label>
+    <input type="datetime" name="DateCreated" />
+
+    <button class="btn btn-primary">Kaydet</button>
+</form>

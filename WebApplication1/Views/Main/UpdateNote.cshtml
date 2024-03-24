@@ -1,0 +1,32 @@
+﻿@model EntityLayer.Concrete.Note
+
+
+@{
+    ViewData["Title"] = "UpdateNote";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<div class="card-header border-0">
+    <h3 class="mb-0">Not Güncelleme Sayfası</h3>
+</div>
+
+@using (Html.BeginForm("UpdateNote", "Main", FormMethod.Post))
+{
+    @Html.HiddenFor(x=>x.NoteId)
+    <br />
+    @Html.Label("User ID (Bu Alanı Değiştirmeyin!)")
+    @Html.TextBoxFor(x => x.UserId, new { @class = "form-control" })
+    <br />
+    @Html.Label("Not Başlığı")
+    @Html.TextBoxFor(x=>x.Title,new {@class="form-control"})
+    <br />
+
+    <label>İçerik</label>
+    @Html.TextBoxFor(x => x.Content, new { @class = "form-control" })
+    <br />
+    @Html.Label("Tarih")
+    @Html.TextBoxFor(x => x.DateCreated, new { @class = "form-control" })
+    <br />
+    <button class="btn btn-success">Güncelle</button>
+}

@@ -1,0 +1,24 @@
+﻿
+@{
+    ViewData["Title"] = "AddUser";
+    Layout = "~/Views/Shared/_AdminLayout2.cshtml";
+}
+
+
+<h3>Kullanıcı Ekleme Ekranı</h3>
+<br />
+<form class="form-control" method="post">
+    <br /><br />
+    @Html.Label("Kullanıcı Adı")
+    <input type="text" name="UserName" class="form-control" />
+    <br />
+    <label>Email</label>
+    <br />
+    <input type="email" name="Email" class="form-control" />
+    <br />
+    <label>Şifre</label>
+    <input type="text" name="Password" class="form-control"/>
+
+    <button class="btn btn-primary">Kaydet</button>
+</form>
+

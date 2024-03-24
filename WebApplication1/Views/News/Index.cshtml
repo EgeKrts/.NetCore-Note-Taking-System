@@ -1,0 +1,26 @@
+﻿@model WebApplication1.Models.NewsModel.Rootobject
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_AdminLayout2.cshtml";
+  
+}
+
+
+<h2>Son Haberler</h2>
+
+@if (Model.articles != null && Model.articles.Length > 0)
+{
+    <ul>
+        @foreach (var article in Model.articles)
+        {
+            <li>
+                <a href="@article.url">@article.title</a>
+            </li>
+        }
+    </ul>
+}
+else
+{
+    <p>No news available.</p>
+}
