@@ -18,3 +18,9 @@
 
 ## Note-Updating Screen
 ![Ekran görüntüsü 2024-03-24 213519](https://github.com/EgeKrts/.NetCore-Note-Taking-System/assets/98173099/f70281f7-8a0f-41e8-96a1-3bc02ada105d)
+
+## News Screen
+![Ekran görüntüsü 2024-03-24 212217](https://github.com/EgeKrts/.NetCore-Note-Taking-System/assets/98173099/86de0aa8-609f-43aa-b137-3f32dde7fa11)
+
+## Weather Screen
+![Ekran görüntüsü 2024-03-24 234315](https://github.com/EgeKrts/.NetCore-Note-Taking-System/assets/98173099/fdc45319-a1a5-4a42-b5ec-84d41ce2e21c)
